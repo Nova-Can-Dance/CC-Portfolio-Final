@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+
+/* Reset Default Styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Box Model */
+* {
+  box-sizing: border-box;
+}
+
+/* Section Styling */
+.section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Transparent Black Background Layer */
+.section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.5)
+  );
+  z-index: 1;
+}
+
+/* Text Overlay */
+.overlay {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+}
+
+.home-link {
+  text-decoration: none; /* 밑줄 제거 */
+  color: #666666; /* 연한 회색 */
+  font-size: 1.2em; /* 텍스트 크기 */
+  font-weight: 100; /* 얇은 텍스트 */
+}
+
+
+/* Background Image */
+#about {
+  background-image: url('thumbnails/thumbnail0.jpg');
+}
+
+#assignment7 {
+  background-image: url('thumbnails/thumbnail7.png');
+}
+
+#assignment6 {
+  background-image: url('thumbnails/thumbnail6.png');
+}
+
+#assignment5 {
+  background-image: url('thumbnails/thumbnail5.png');
+}
+
+#assignment4 {
+  background-image: url('thumbnails/thumbnail4.png');
+}
+
+#assignment3 {
+  background-image: url('thumbnails/thumbnail3.png');
+}
+
+#assignment2 {
+  background-image: url('thumbnails/thumbnail2.png');
+}
+
+#assignment1 {
+  background-image: url('thumbnails/thumbnail1.png');
+}
+
+
+/*Text Styling*/
+h2 {
+  font-weight: 600;
+  margin: 0 0 10px;
+  font-size: 2.5em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.2em;
+  line-height: 1.6;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+nav a {
+  text-decoration: none; /* 밑줄 제거 */
+  color: #666666; /* 연한 회색 */
+  font-size: 1.2em; /* 텍스트 크기 */
+  font-weight: 100; /* 가벼운 텍스트 설정 */
+}
+
+
+/* Initialize Link Styling */
+.section-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
